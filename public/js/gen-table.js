@@ -5,7 +5,7 @@ const tableNumber = parseInt(urlParams.get("num")); // Extract the number
 // ✅ Validate number
 if (isNaN(tableNumber) || tableNumber < 1) {
     alert("Invalid number! Redirecting...");
-    window.location.href = "/index.html"; // Redirect if invalid
+    //window.location.href = "/index.html"; // Redirect if invalid
 }
 
 // ✅ Elements
