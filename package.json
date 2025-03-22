@@ -1,8 +1,14 @@
 {
   "name": "LogicBoost",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "https://github.com/Ankit53710/LOGICBOOST.git",
   "author": "Ankit Mewada <mewadaankit05@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "serve . -p 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
 }
