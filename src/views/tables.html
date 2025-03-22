@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - LogicBoost</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script defer src="/public/js/tables.js"></script>
+    <script defer src="/public/js/main.js"></script>
+    <script defer src="/public/js/load-header-footer.js"></script>
+</head>
+<body>
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <nav id="drawer" class="drawer">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/queries">Queries</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Let's Play with Tables</h2>
+        
+        <!-- Dialog Box -->
+        <div id="table-dialog" class="dialog">
+            <h3>Enter the number till you want the tables</h3>
+            <input type="number" id="tableInput" placeholder="Enter a number" min="1">
+            <button onclick="generateTableLinks()">Submit</button>
+        </div>
+
+        <!-- Section where table links will be generated -->
+        <div id="table-links"></div>
+    </main>
+
+    <!-- Footer Container -->
+    <!-- <div id="footer-container"></div> -->
+</body>
+</html>

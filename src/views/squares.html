@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Squares</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script defer src="/public/js/load-header-footer.js"></script>
+    <script defer src="/public/js/squares.js"></script>
+    <script defer src="/public/js/main.js"></script>
+</head>
+<body>
+
+    <!-- Header Component -->
+    <div id="header-container"></div>
+
+    <main>
+        <button onclick="openDialog()">Start Practicing</button>
+
+        <!-- Dialog Box -->
+        <div id="square-dialog" class="dialog-box">
+            <div class="dialog-content">
+                <h2>Enter the number till you want to practice squares</h2>
+                <input type="number" id="square-limit" min="1" placeholder="Enter a number">
+                <button onclick="startPractice()">Submit</button>
+                <button onclick="closeDialog()">Cancel</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <!-- <div id="footer-container"></div> -->
+
+</body>
+</html>

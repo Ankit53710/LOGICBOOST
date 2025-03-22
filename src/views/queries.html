@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a Query - LogicBoost</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script defer src="/public/js/main.js"></script>
+</head>
+<body>
+
+    <div id="header"></div> <!-- Header Component -->
+
+    <main>
+        <h2>Submit Your Query</h2>
+        <p>Have a question? Send it to us and we will respond as soon as possible.</p>
+
+        <form id="queryForm">
+            <label for="queryName">Name:</label>
+            <input type="text" id="queryName" required>
+
+            <label for="queryEmail">Email:</label>
+            <input type="email" id="queryEmail" required>
+
+            <label for="queryText">Your Query:</label>
+            <textarea id="queryText" required></textarea>
+
+            <button type="submit">Submit Query</button>
+        </form>
+
+        <p id="queryResponse"></p>
+    </main>
+
+    <div id="footer"></div> <!-- Footer Component -->
+
+    <script src="/public/js/components.js"></script>
+    <script src="/public/js/query.js"></script>
+</body>
+</html>
