@@ -1,6 +1,6 @@
 // Get number limit from URL
 const urlParams = new URLSearchParams(window.location.search);
-const limit = parseInt(urlParams.get("limit"));
+const limit = parseInt(urlParams.get("limit"),10) || 20;
 
 if (!limit || limit <= 0) {
     alert("Invalid number! Redirecting to home...");

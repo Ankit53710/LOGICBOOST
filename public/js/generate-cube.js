@@ -1,6 +1,6 @@
 // Get number limit from URL
 const params = new URLSearchParams(window.location.search);
-const limit = parseInt(params.get("limit"), 10);
+const limit = parseInt(params.get("limit"), 10) || 20;
 
 // Validate limit
 if (!limit || limit < 1) {
