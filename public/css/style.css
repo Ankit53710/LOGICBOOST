@@ -344,7 +344,7 @@ footer {
     background-color: #007bff;
     color: white;
     padding: 15px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -425,6 +425,7 @@ button:hover {
     padding: 40px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
 .footer-container {
@@ -531,6 +532,3 @@ button:hover {
     text-align: center;
     margin-top: 10px;
 }
-
-
-/*  */

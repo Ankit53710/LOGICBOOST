@@ -6,10 +6,11 @@
     <title>Cube Game</title>
     <link rel="stylesheet" href="/public/css/style.css">
     <script defer src="/public/js/generate-cube.js"></script>
+    <script defer src="/public/js/main.js"></script>
 </head>
 <body>
-    <header id="header"></header>
-
+    <div id="header-container"></div>
+    <div class="container">
     <main>
         <h2 id="cube-heading">Let's Practice Cubes</h2>
         <p id="question"></p>
@@ -20,9 +21,10 @@
             <button class="option-btn"></button>
         </div>
     </main>
+</div>
 
-    <footer id="footer"></footer>
+    <!-- <footer id="footer"></footer> -->
 
-    <script src="/public/js/components.js"></script>
+    <script src="/public/js/load-header-footer.js"></script>
 </body>
 </html>
