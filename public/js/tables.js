@@ -26,12 +26,19 @@ function generateTableLinks() {
 
     for (let i = 1; i <= num; i++) {
         const link = document.createElement("a");
-        link.href = `/src/views/gen-table.html?num=${i}`;  // Use URL query parameter
         link.textContent = `Let's play with ${i}'s table`;
         link.classList.add("table-link");
-
+    
+        // Set click event instead of href
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            localStorage.setItem("Tnumber", i);
+            window.location.href = "/src/views/gen-table.html";
+        });
+    
         const listItem = document.createElement("li");
         listItem.appendChild(link);
         tableLinksDiv.appendChild(listItem);
     }
+    
 }

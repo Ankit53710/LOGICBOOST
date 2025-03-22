@@ -1,6 +1,6 @@
 // Get number limit from URL
-const params = new URLSearchParams(window.location.search);
-const limit = parseInt(params.get("limit"), 10) || 20;
+//const params = new URLSearchParams(window.location.search);
+const limit = parseInt(localStorage.getItem("cubeLimit"));
 
 // Validate limit
 if (!limit || limit < 1) {

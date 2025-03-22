@@ -1,6 +1,6 @@
 // ✅ Get number from URL parameters
-const urlParams = new URLSearchParams(window.location.search);
-const tableNumber = parseInt(urlParams.get("num"),10) || 20; // Extract the number
+//const urlParams = new URLSearchParams(window.location.search);
+const tableNumber = parseInt(localStorage.getItem("Tnumber")); // Extract the number
 
 // // ✅ Validate number
 // if (isNaN(tableNumber) || tableNumber < 1) {

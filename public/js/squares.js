@@ -8,9 +8,12 @@ function closeDialog() {
 
 function startPractice() {
     let num = document.getElementById("square-limit").value;
+    
     if (num > 0) {
-        window.location.href = `/src/views/generate-square.html?limit=${num}`;
+        localStorage.setItem("Slimit", num);  // Store in localStorage
+        window.location.href = "/src/views/generate-square.html";  // Redirect
     } else {
         alert("Please enter a valid number greater than 0.");
     }
 }
+
